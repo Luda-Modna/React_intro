@@ -2,16 +2,8 @@
   font-family: sans-serif;
 }
 
-.header {
-  background-color: aqua;
-  font-size: 2rem;
-  text-align: center;
-  font-weight: bold;
-  padding: 10px;
-}
-
 .userCard {
-  margin: 0 auto;
+  margin: 10px auto;
   max-width: 300px;
   display: flex;
   flex-direction: column;
@@ -19,12 +11,28 @@
   padding: 20px;
   box-shadow: 0 0 5px grey;
   width: 100%;
+  min-height: 250px;
+  border-radius: 10%;
+  position: relative;
 }
 
 .userCard > img {
-  width: 150px;
+  width: 100%;
   height: 150px;
   object-fit: cover;
-  object-position: top;
+}
+.userCard > h2 {
+  padding: 10px;
+  width: 100%;
+}
+
+.btnAddFollowers {
+  background-color: white;
   border-radius: 50%;
+  padding: 10px 15px;
+  font-size: large;
+  position: absolute;
+  bottom: 35%;
+  border: none;
+  cursor: pointer;
 }
